@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 # Configure SSH configuration file
+
 Host 54.160.123.45
+sendEnv LANG LC_*
+HashKknownHost yes
+GssAPI:Authentication yes
+GSSAPIDelegateCredentials no
 IdentityFile ~/.ssh/school
 PasswordAuthentication no
